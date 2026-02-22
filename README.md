@@ -106,6 +106,7 @@ mvn --version
 Clone the repository:
 
 git clone https://github.com/dagmawiii03/Project-Chimera-The-Agentic-Infrastructure-Challenge
+
 cd project-chimera
 
 ## Build the project:
@@ -179,4 +180,4 @@ It should answer using your actual code, not generic knowledge.
 
 ## Acknowledgements
 
-- Built as part of a challange five by **10 academy**
+- Built as part of a challange given by **10 academy**
