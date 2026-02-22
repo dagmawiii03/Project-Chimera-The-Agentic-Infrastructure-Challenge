@@ -59,7 +59,7 @@ The system follows a clean layered architecture with clear separation of concern
 ---
 
 ## Project Structure
-
+```
 project-chimera/
 ├── pom.xml
 ├── README.md
@@ -86,6 +86,7 @@ project-chimera/
 └── exception/
 └── BudgetExceededExceptionTest.java # Exception contract tests
 
+```
 
 ---
 
@@ -105,18 +106,13 @@ mvn --version
 ## Getting Started
 Clone the repository:
 
-git clone https://github.com/dagmawiii03/Project-Chimera-The-Agentic-Infrastructure-Challenge
+`git clone https://github.com/dagmawiii03/Project-Chimera-The-Agentic-Infrastructure-Challenge`
 
-cd project-chimera
+`cd project-chimera`
 
 ## Build the project:
 
-mvn clean compile
-
-
-## Run all tests:
-
-mvn clean test
+`mvn clean compile`
 
 
 ## TDD Approach
@@ -131,12 +127,12 @@ The project is currently in the Red phase: tests are written, they define the ta
 
 ## Running Tests
 
-mvn clean test
+`mvn clean test`
 
 
 ## Expected Test Results
 
-Tests run: 16, Failures: 6, Errors: 0
+`Tests run: 16, Failures: 6, Errors: 0`
 
 
  ## Demo Guide
@@ -144,7 +140,7 @@ Tests run: 16, Failures: 6, Errors: 0
  **Step 1** — Clone and Open
 Clone the repo and open the project folder in your IDE (VS Code, IntelliJ, etc.).
 
-git clone https://github.com/dagmawiii03/Project-Chimera-The-Agentic-Infrastructure-Challenge
+`git clone https://github.com/dagmawiii03/Project-Chimera-The-Agentic-Infrastructure-Challenge`
 
  **Step 2** — Look Around : Open a few files to get familiar with the code:
 
