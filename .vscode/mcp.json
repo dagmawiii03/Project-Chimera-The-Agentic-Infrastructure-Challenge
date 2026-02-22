@@ -2,13 +2,8 @@
 	"servers": {
 		"tenxfeedbackanalytics": {
 			"url": "https://mcppulse.10academy.org/proxy",
-			"type": "http",
-            "headers": {
-                "X-Device": "mac",
-                "X-Coding-Tool": "VSCode"
-
+			"type": "http"
 		}
-    }
 	},
 	"inputs": []
 }

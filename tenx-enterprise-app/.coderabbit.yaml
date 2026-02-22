@@ -1,0 +1,32 @@
+language: "en"
+reviews:
+  profile: "assertive"
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+  path_instructions:
+    - path: "src/main/java/**/*.java"
+      instructions: |
+        Review for:
+        1. Spec Alignment — Verify all code aligns with specs/ directory contracts.
+           Every Record must match specs/technical.md JSON schema.
+        2. Java Thread Safety — All DTOs must be immutable Records. No shared
+           mutable state between Workers. OCC version fields present.
+        3. Virtual Threads — Confirm Executors.newVirtualThreadPerTaskExecutor()
+           for Worker concurrency. No legacy Thread or fixed pools.
+        4. Security — Check for injection vulnerabilities, validate all inputs,
+           enforce budget limits before external API calls.
+        5. Exception Handling — Domain exceptions only (BudgetExceededException,
+           StaleVersionException, SkillExecutionException). No raw RuntimeException.
+    - path: "src/test/java/**/*.java"
+      instructions: |
+        Review for:
+        1. TDD compliance — Tests define behavior before implementation exists.
+        2. JUnit 5 — @Test, @DisplayName, assertThrows, Mockito where needed.
+        3. Contract coverage — All API contracts from specs/technical.md have tests.
+  auto_review:
+    enabled: true
+    drafts: false
+chat:
+  auto_reply: true

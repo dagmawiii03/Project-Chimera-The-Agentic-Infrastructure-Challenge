@@ -1,0 +1,63 @@
+-------------------------------------------------------------------------------
+Test set: com.tenx.enterprise.SkillsInterfaceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.110 s <<< FAILURE! -- in com.tenx.enterprise.SkillsInterfaceTest
+com.tenx.enterprise.SkillsInterfaceTest.generateContent_lowBudget_throwsBudgetExceeded -- Time elapsed: 0.045 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Real implementation must enforce budget limits. A $0.01 budget should not be enough to generate content. ==> Expected com.tenx.enterprise.exception.BudgetExceededException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:39)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3127)
+	at com.tenx.enterprise.SkillsInterfaceTest.generateContent_lowBudget_throwsBudgetExceeded(SkillsInterfaceTest.java:144)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.tenx.enterprise.SkillsInterfaceTest.generateContent_hashtagsRelatToTrend -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Content must include at least 3 hashtags for discoverability, got: 1 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:210)
+	at com.tenx.enterprise.SkillsInterfaceTest.generateContent_hashtagsRelatToTrend(SkillsInterfaceTest.java:128)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.tenx.enterprise.SkillsInterfaceTest.generateContent_scriptIsSubstantial -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Real content script must be at least 50 characters for a meaningful video. Got 23 chars: 'Stub script placeholder' ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:210)
+	at com.tenx.enterprise.SkillsInterfaceTest.generateContent_scriptIsSubstantial(SkillsInterfaceTest.java:117)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.tenx.enterprise.SkillsInterfaceTest.generateContent_estimatedCostIsRealistic -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Real implementation must report a non-zero cost for content generation. Got: $0.0 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:210)
+	at com.tenx.enterprise.SkillsInterfaceTest.generateContent_estimatedCostIsRealistic(SkillsInterfaceTest.java:155)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.tenx.enterprise.SkillsInterfaceTest.contentGenerator_mustNotBeStub -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: TDD GOAL: Replace ContentGeneratorSkillStub with a real implementation that generates meaningful content using an LLM or template engine. ==> expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:235)
+	at com.tenx.enterprise.SkillsInterfaceTest.contentGenerator_mustNotBeStub(SkillsInterfaceTest.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

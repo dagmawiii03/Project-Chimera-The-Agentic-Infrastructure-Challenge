@@ -1,0 +1,9 @@
+target/
+.git/
+.gitignore
+*.md
+specs/
+skills/
+research/
+.github/
+.coderabbit.yaml
